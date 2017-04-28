@@ -9,16 +9,16 @@ cuteboydot@gmail.com
 
 
 > ## EXAMPLE 1 : Movies category..  
-|-------------------------------------------------------|  
-|Num    |Document(terms)                    |Class      |  
-|-------|-----------------------------------|-----------|  
-|1      |fun, couple, love, love            |Comedy     |  
-|2      |fast, furious, shoot               |Action     |  
-|3      |couple, fly, fast, fun, fun        |Comedy     |  
-|4      |furious, shoot, shoot, fun         |Action     |  
-|5      |fly, fast, shoot, love             |Action     |  
-|6      |fast, furious, fun                 |???        |  
-|-------------------------------------------------------|  
+| ---------------------------------------------------------- |  
+| Num     | Document(terms)                     | Class      |  
+| ------- | ----------------------------------- | ---------- |  
+| 1       | fun, couple, love, love             | Comedy     |  
+| 2       | fast, furious, shoot                | Action     |  
+| 3       | couple, fly, fast, fun, fun         | Comedy     |  
+| 4       | furious, shoot, shoot, fun          | Action     |  
+| 5       | fly, fast, shoot, love              | Action     |  
+| 6       | fast, furious, fun                  | ???        |  
+| ---------------------------------------------------------- |  
 Document Words List = {fun(0), couple(1), love(2), fast(3), furious(4), shoot(5), fly(6)}  
 Class List = {Comedy(0), Action(1)}}   
   
