@@ -9,7 +9,6 @@ cuteboydot@gmail.com
 
 
 > ## EXAMPLE 1 : Movies category..  
-| ---------------------------------------------------------- |  
 | Num     | Document(terms)                     | Class      |  
 | ------- | ----------------------------------- | ---------- |  
 | 1       | fun, couple, love, love             | Comedy     |  
@@ -18,7 +17,7 @@ cuteboydot@gmail.com
 | 4       | furious, shoot, shoot, fun          | Action     |  
 | 5       | fly, fast, shoot, love              | Action     |  
 | 6       | fast, furious, fun                  | ???        |  
-| ---------------------------------------------------------- |  
+  
 Document Words List = {fun(0), couple(1), love(2), fast(3), furious(4), shoot(5), fly(6)}  
 Class List = {Comedy(0), Action(1)}}   
   
@@ -45,9 +44,9 @@ After Smoothing
 𝑷(𝒂𝒄𝒕𝒊𝒐𝒏|𝒇𝒂𝒔𝒕, 𝒇𝒖𝒓𝒊𝒐𝒖𝒔, 𝒇𝒖𝒏) = (𝟐+𝟏)/(𝟏𝟏+𝟕) * (𝟐+𝟏)/(𝟏𝟏+𝟕) * (𝟏+𝟏)/(𝟏𝟏+𝟕) * 𝟑/𝟓 = 𝟎.𝟎𝟎𝟏𝟖  
   
 
-> ## EXAMPLE 2 : Playing tennis..
-|---------------------------------------------------------------|
-|Num    |Outlook    |Temperature    |Humidity   |Wind   |Class  |
+> ## EXAMPLE 2 : Playing tennis..  
+|---------------------------------------------------------------|  
+|Num    |Outlook    |Temperature    |Humidity   |Wind   |Class  |  
 |-------|-----------|---------------|-----------|-------|-------|
 |1      |Sunny      |Hot            |High       |Weak   |No     |
 |2      |Sunny      |Hot            |High       |Strong |No     |
