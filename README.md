@@ -3,9 +3,9 @@ Implemation of naive bayes classification
 
 cuteboydot@gmail.com
 
-C = argmax P(c|d)
-C = argmax ( P(d|c)P(c) / P(d) )
-C = argmax P(d|c)P(c)
+C = argmax P(c|d)  
+C = argmax ( P(d|c)P(c) / P(d) )  
+C = argmax P(d|c)P(c)  
 
 𝑪 = 𝒂𝒓𝒈𝒎𝒂𝒙 𝑷(𝒄|𝒅)
 𝑪 = 𝒂𝒓𝒈𝒎𝒂𝒙( 𝑷(𝒅│𝒄)𝑷(𝒄) / 𝑷(𝒅) )
