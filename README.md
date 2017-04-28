@@ -87,13 +87,13 @@ After Smoothing
 P(m) = 0.5, P(f) = 0.5  
 
 Gaussian distribution  
-| Class | Feature | Mean | Var |
-| ----- | ------- | ---- | --- |
-| Male  | Height  | 5.8550 | 0.0350 |
-| Male  | Weight  | 176.2500 | 122.9167 |
-| Male  | Foot    | 11.2500 | 0.9167 |
-| Female | Height | 5.4175 | 0.0972 |
-| Female | Weight | 132.5000 | 558.333 |
+| Class | Feature | Mean | Var |  
+| ----- | ------- | ---- | --- |  
+| Male  | Height  | 5.8550 | 0.0350 |  
+| Male  | Weight  | 176.2500 | 122.9167 |  
+| Male  | Foot    | 11.2500 | 0.9167 |  
+| Female | Height | 5.4175 | 0.0972 |  
+| Female | Weight | 132.5000 | 558.333 |  
 | 7.5000 | Foot | 7.5000 | 1.6777 |  
 Log likelihood  
 𝑷(class)𝑷(hei│class)𝑷(wei│class)𝑷(foot│class) ~   
