@@ -87,6 +87,7 @@ After Smoothing
 P(m) = 0.5, P(f) = 0.5  
 
 Gaussian distribution  
+
 | Class  | Feature | Mean     | Var      |
 | -----  | ------- | -------- | -------- |
 | Male   | Height  | 5.8550   | 0.0350   |
