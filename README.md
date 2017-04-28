@@ -18,8 +18,8 @@ cuteboydot@gmail.com
 | 5       | fly, fast, shoot, love              | Action     |  
 | 6       | fast, furious, fun                  | ???        |  
   
->> Document Words List = {fun(0), couple(1), love(2), fast(3), furious(4), shoot(5), fly(6)}  
->> Class List = {Comedy(0), Action(1)}}   
+Document Words List = {fun(0), couple(1), love(2), fast(3), furious(4), shoot(5), fly(6)}  
+Class List = {Comedy(0), Action(1)}}   
   
 𝑪 = 𝒂𝒓𝒈𝒎𝒂𝒙 𝑷(𝒇𝒂𝒔𝒕, 𝒇𝒖𝒓𝒊𝒐𝒔,𝒇𝒖𝒏│𝒄)𝑷(𝒄)  
 𝑷(𝒇𝒂𝒔𝒕, 𝒇𝒖𝒓𝒊𝒐𝒔,𝒇𝒖𝒏│𝒄)𝑷(𝒄) = 𝑷(𝒇𝒂𝒔𝒕│𝒄)*𝑷(𝒇𝒖𝒓𝒊𝒐𝒖𝒔│𝒄)*𝑷(𝒇𝒖𝒏|𝒄)  
