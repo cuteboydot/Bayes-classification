@@ -2,7 +2,7 @@
 Implemation of naive bayes classification
 
 cuteboydot@gmail.com
-
+Naive Bayes classifier :  
 𝑪 = 𝒂𝒓𝒈𝒎𝒂𝒙 𝑷(𝒄|𝒅)  
 𝑪 = 𝒂𝒓𝒈𝒎𝒂𝒙( 𝑷(𝒅│𝒄)𝑷(𝒄) / 𝑷(𝒅) )  
 𝑪 = 𝒂𝒓𝒈𝒎𝒂𝒙 𝑷(𝒅│𝒄)𝑷(𝒄)  
@@ -42,6 +42,15 @@ Class List = {Comedy(0), Action(1)}}
 After Smoothing  
 𝑷(𝒄𝒐𝒎𝒆𝒅𝒚|𝒇𝒂𝒔𝒕, 𝒇𝒖𝒓𝒊𝒐𝒖𝒔, 𝒇𝒖𝒏) = (𝟏+𝟏)/(𝟗+𝟕) * (𝟎+𝟏)/(𝟗+𝟕) * (𝟑+𝟏)/(𝟗+𝟕) * 𝟐/𝟓 = 𝟎.𝟎𝟎𝟎𝟕𝟖  
 𝑷(𝒂𝒄𝒕𝒊𝒐𝒏|𝒇𝒂𝒔𝒕, 𝒇𝒖𝒓𝒊𝒐𝒖𝒔, 𝒇𝒖𝒏) = (𝟐+𝟏)/(𝟏𝟏+𝟕) * (𝟐+𝟏)/(𝟏𝟏+𝟕) * (𝟏+𝟏)/(𝟏𝟏+𝟕) * 𝟑/𝟓 = 𝟎.𝟎𝟎𝟏𝟖  
+- usage : train  
+```  
+printf("----------------------EXAMPLE#1----------------------\n");
+CNaiveBayesDocument * pNaiveBayes = new CNaiveBayesDocument();
+pNaiveBayes->init(SIZE_OUTPUT, SIZE_WORDLIST, SIZE_RECORD, ppInputData, true);
+pNaiveBayes->train();
+pNaiveBayes->classfication(pTestData);
+printf("-----------------------------------------------------\n\n");
+```
   
   
 > ## EXAMPLE 2 : Playing tennis..  
@@ -69,7 +78,15 @@ After Smoothing
 ...  
 𝑷(𝒚)𝑷(𝒔𝒖𝒏│𝒚)𝑷(𝒄𝒐𝒐𝒍│𝒚)𝑷(𝒉𝒊𝒈𝒉│𝒚)𝑷(𝒔𝒕𝒓𝒐𝒏𝒈│𝒚) = 𝟎.𝟎𝟎𝟓  
 𝑷(𝒏)𝑷(𝒔𝒖𝒏│𝒏)𝑷(𝒄𝒐𝒐𝒍│𝒏)𝑷(𝒉𝒊𝒈𝒉│𝒏)𝑷(𝒔𝒕𝒓𝒐𝒏𝒈│𝒏) = 𝟎.𝟎𝟐𝟏  
-  
+- usage : train  
+```  
+printf("----------------------EXAMPLE#2----------------------\n");
+CNaiveBayesMultiFeature * pNaiveBayesMulti = new CNaiveBayesMultiFeature();
+pNaiveBayesMulti->init(SIZE_OUTPUT, SIZE_RECORD, SIZE_FEATURE, pFeatWords, ppInputData, true);
+pNaiveBayesMulti->train();
+pNaiveBayesMulti->classfication(pTestData);
+printf("-----------------------------------------------------\n\n");
+```
   
   
 > ## EXAMPLE 3 : Male or female..
@@ -102,4 +119,13 @@ Log likelihood
 𝑷(class)𝑷(hei│class)𝑷(wei│class)𝑷(foot│class) ~   
 log( 𝑷(class)𝑷(hei│class)𝑷(wei│class)𝑷(foot│class) ) =  
 log(𝑷(class)) + log(𝑷(hei│class)) + log(𝑷(wei│class)) + log(𝑷(foot│class))  
+- usage : train  
+```  
+printf("----------------------EXAMPLE#3----------------------\n");
+CNaiveBayesMultiFeatureGaussian * pNaiveBayesMultiGauss = new CNaiveBayesMultiFeatureGaussian();
+pNaiveBayesMultiGauss->init(SIZE_OUTPUT, SIZE_RECORD, SIZE_FEATURE, ppInputData);
+pNaiveBayesMultiGauss->train();
+pNaiveBayesMultiGauss->classfication(pTestData, false);
+printf("-----------------------------------------------------\n\n");
+```
   
