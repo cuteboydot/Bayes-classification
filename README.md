@@ -79,7 +79,7 @@ printf("-----------------------------------------------------\n\n");
 𝑷(𝒚)𝑷(𝒔𝒖𝒏│𝒚)𝑷(𝒄𝒐𝒐𝒍│𝒚)𝑷(𝒉𝒊𝒈𝒉│𝒚)𝑷(𝒔𝒕𝒓𝒐𝒏𝒈│𝒚) = 𝟎.𝟎𝟎𝟓  
 𝑷(𝒏)𝑷(𝒔𝒖𝒏│𝒏)𝑷(𝒄𝒐𝒐𝒍│𝒏)𝑷(𝒉𝒊𝒈𝒉│𝒏)𝑷(𝒔𝒕𝒓𝒐𝒏𝒈│𝒏) = 𝟎.𝟎𝟐𝟏  
 - usage : train  
-```  
+```cpp  
 printf("----------------------EXAMPLE#2----------------------\n");
 CNaiveBayesMultiFeature * pNaiveBayesMulti = new CNaiveBayesMultiFeature();
 pNaiveBayesMulti->init(SIZE_OUTPUT, SIZE_RECORD, SIZE_FEATURE, pFeatWords, ppInputData, true);
@@ -120,7 +120,7 @@ Log likelihood
 log( 𝑷(class)𝑷(hei│class)𝑷(wei│class)𝑷(foot│class) ) =  
 log(𝑷(class)) + log(𝑷(hei│class)) + log(𝑷(wei│class)) + log(𝑷(foot│class))  
 - usage : train  
-```  
+```cpp  
 printf("----------------------EXAMPLE#3----------------------\n");
 CNaiveBayesMultiFeatureGaussian * pNaiveBayesMultiGauss = new CNaiveBayesMultiFeatureGaussian();
 pNaiveBayesMultiGauss->init(SIZE_OUTPUT, SIZE_RECORD, SIZE_FEATURE, ppInputData);
