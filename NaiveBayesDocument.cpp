@@ -28,14 +28,14 @@ CNaiveBayesDocument::~CNaiveBayesDocument(void)
 }
 
 // init datas
-void CNaiveBayesDocument::init(int nSizeOutputPattern, int nSizeDocWords, int nSizeRecord, INPUTDATA ** ppDataList, bool UseSmooth)
+void CNaiveBayesDocument::init(int nSizeOutputPattern, int nSizeDocWords, int nSizeRecord, INPUTDATA ** ppDataList, bool bUseSmooth)
 {
 	// input datas
 	m_nSizeOutputPattern = nSizeOutputPattern;
 	m_nSizeDocWords = nSizeDocWords;
 	m_nSizeRecord = nSizeRecord;
 	m_ppDataList = ppDataList;
-    m_bUseSmooth = UseSmooth;
+    	m_bUseSmooth = bUseSmooth;
 
 	// internal parameters
 	m_pProbClass = new double[m_nSizeOutputPattern];
