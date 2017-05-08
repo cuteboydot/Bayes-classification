@@ -71,14 +71,6 @@ void CNaiveBayesMultiFeatureGaussian::init(int nSizeOutputPattern, int nSizeReco
 
 void CNaiveBayesMultiFeatureGaussian::train()
 {
-	// reset count & sum values
-	for(int a=0; a<m_nSizeOutputPattern; a++) {
-	m_pNumClass[a] = 0;
-
-		for(int b=0; b<m_nSizeFeature; b++) {
-		    m_ppSumFeatClass[a][b] = 0;
-		}
-	}
 	// count & sum values
 	for(int a=0; a<m_nSizeRecord; a++) {
 		m_pNumClass[m_ppDataList[a]->nClass]++;
