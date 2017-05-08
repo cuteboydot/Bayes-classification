@@ -1,4 +1,4 @@
-﻿#include "NaiveBayesDocument.h"
+#include "NaiveBayesDocument.h"
 
 CNaiveBayesDocument::CNaiveBayesDocument(void)
 {
@@ -28,13 +28,14 @@ CNaiveBayesDocument::~CNaiveBayesDocument(void)
 }
 
 // init datas
-void CNaiveBayesDocument::init(int nSizeOutputPattern, int nSizeDocWords, int nSizeRecord, INPUTDATA ** ppDataList, bool m_bUseSmooth)
+void CNaiveBayesDocument::init(int nSizeOutputPattern, int nSizeDocWords, int nSizeRecord, INPUTDATA ** ppDataList, bool UseSmooth)
 {
 	// input datas
 	m_nSizeOutputPattern = nSizeOutputPattern;
 	m_nSizeDocWords = nSizeDocWords;
 	m_nSizeRecord = nSizeRecord;
 	m_ppDataList = ppDataList;
+    m_bUseSmooth = UseSmooth;
 
 	// internal parameters
 	m_pProbClass = new double[m_nSizeOutputPattern];
@@ -86,9 +87,9 @@ void CNaiveBayesDocument::train()
 		// get prob parameter of words including smoothing 
 		for(int b=0; b<m_nSizeDocWords; b++) {
 			if(!m_bUseSmooth)
-				m_ppProbWordClass[a][b] = (double)((double)m_ppNumWordClass[a][b] / (double)m_pNumTotWordClass[a]);
+                m_ppProbWordClass[a][b] = (double)((double)m_ppNumWordClass[a][b] / (double)m_pNumTotWordClass[a]);
 			else
-				m_ppProbWordClass[a][b] = (double)((double)(m_ppNumWordClass[a][b] + 1) / (double)(m_pNumTotWordClass[a] + m_nSizeDocWords));
+                m_ppProbWordClass[a][b] = (double)((double)(m_ppNumWordClass[a][b] + 1) / (double)(m_pNumTotWordClass[a] + m_nSizeDocWords));
 			printf("P(x%d | c%d) = %0.4f \n", b, a, m_ppProbWordClass[a][b]);
 		}
 		printf("\n");
@@ -127,3 +128,4 @@ void CNaiveBayesDocument::classfication(INPUTDATA * pData)
 
 	delete[] pProbability;
 }
+
