@@ -1,7 +1,12 @@
 ﻿#pragma once
 
-#include "stdafx.h"
-#include "targetver.h"
+#include <iostream>
+#include <fstream>
+#include <stdlib.h>
+#include <math.h>
+#include <ctype.h>
+#include <stdio.h>
+#include <float.h>
 
 typedef struct inputdata {
 	int nCnt;
