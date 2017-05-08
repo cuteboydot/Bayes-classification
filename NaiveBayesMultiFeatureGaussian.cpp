@@ -131,7 +131,7 @@ void CNaiveBayesMultiFeatureGaussian::classfication(INPUTDATA_MULTI_GAUSS * pTes
 
 		printf("\n");
 		for(int b=0; b<m_nSizeFeature; b++) {
-			printf("P(X%d | C%d) * ", b, a);
+			printf("P(X%d%d | C%d) * ", a, b, a);
 			dGauss = getgauss(m_ppMeanFeatClass[a][b], m_ppVarFeatClass[a][b], pTest->pData[b]);
 
 			if (bUseLog) pProbability[a] += log(dGauss);
