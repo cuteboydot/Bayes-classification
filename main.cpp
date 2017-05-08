@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include <fstream>
-#include <conio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <ctype.h>
@@ -25,13 +24,14 @@ void EX1();
 void EX2();
 void EX3();
 
-void main()
+int main()
 {
 	EX1();
 	EX2();
 	EX3();
 
 	printf("Bye~~~!!! \n");
+	return 0;
 }
 
 
