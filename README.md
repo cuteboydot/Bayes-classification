@@ -87,6 +87,9 @@ pNaiveBayesMulti->train();
 pNaiveBayesMulti->classfication(pTestData);
 printf("-----------------------------------------------------\n\n");
 ```
+<br>
+<img src="https://github.com/cuteboydot/Bayes-classification/blob/master/img/ex2.JPG" />
+</br>
   
   
 > ## EXAMPLE 3 : Male or female..
@@ -128,4 +131,7 @@ pNaiveBayesMultiGauss->train();
 pNaiveBayesMultiGauss->classfication(pTestData, false);
 printf("-----------------------------------------------------\n\n");
 ```
+<br>
+<img src="https://github.com/cuteboydot/Bayes-classification/blob/master/img/ex3.JPG" />
+</br>
   
