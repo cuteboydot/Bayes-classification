@@ -113,7 +113,7 @@ void CNaiveBayesMultiFeature::classfication(INPUTDATA_MULTI * pTest)
 		pProbability[a] = 1;
 		printf("\n");
 		for(int b=0; b<m_nSizeFeature; b++) {
-			printf("P(X%d | C%d) * ", b, a);
+			printf("P(X%d%d | C%d) * ", b, pTest->pData[b], a);
 			pProbability[a] *= m_pppProbWordFeatClass[a][b][pTest->pData[b]];
 		}
 		pProbability[a] *= m_pProbClass[a];
