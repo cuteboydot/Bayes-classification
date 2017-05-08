@@ -20,7 +20,7 @@ public:
 	CNaiveBayesDocument(void);
 	~CNaiveBayesDocument(void);
 
-	void init(int nSizeOutputPattern, int nSizeDocWords, int nSizeRecord, INPUTDATA ** ppDataList, bool m_bUseSmooth);
+	void init(int nSizeOutputPattern, int nSizeDocWords, int nSizeRecord, INPUTDATA ** ppDataList, bool bUseSmooth);
 	void train();
 	void classfication(INPUTDATA * pData);
 
